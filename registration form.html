@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Student Registration Form</title>
+</head>
+<body>
+	<form>
+		<table align="center" height="500" width="450">
+			<tr>
+				<td> <h2 style="color: blue;" > Student Register Form</h2>
+				</td>
+			
+			<tr>
+				<td> <label for="Rno">RegNo</label></td>
+				<td><input type="text" name="RegNo" placeholder="Enter your RegNo"></td>
+			</tr>
+			<tr>
+				<td> <label for="name">name</label></td>
+				<td><input type="text" name="name" placeholder="Enter your name"></td>
+			</tr>
+
+			<tr>
+				<td> <label for="fname">father's name</label></td>
+				<td><input type="text" name="fname" placeholder="Enter your father's name"></td>
+			</tr>
+			<tr>
+				<td><label for = "Gender">Gender</label></td>
+				<td><input type="radio" name="Gender" value="Male">Male
+					<input type="radio" name="Gender" value="Female">Female</td>
+			</tr>
+			<tr>
+				<td><label for="DOB">Date Of Birth</label></td>
+				<td><input type="date" name="DOB"></td>
+			</tr>
+			<tr>
+				<td><label for="Languages Known">Languages Known</label></td>
+				<td><table>
+				
+				<tr>
+				
+					<td>	
+					<input type="checkbox" name="C" value="C">C
+					<input type="checkbox" name="C++" value="C++">C++
+					<input type="checkbox" name="Python" value="Python">Python 
+					</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="checkbox" name="Java" value="Java">Java
+					<input type="checkbox" name="R" value="R">R
+					<input type="checkbox" name="Julia" value="Julia">Julia
+				</td>
+			</tr>
+			</table>
+			</td>
+			</tr>
+			<tr>
+				<td><label for="branch">Branch</label></td>
+			    <td>
+				<select id="branch" name="branch"  >
+					<option value="" disabled selected hidden>Select a branch</option>
+					<option value="AI&DS">AI&DS</option>
+					<option value="AI&ML">AI&ML</option>
+					<option value="CSE">CSE</option>
+                    <option value="IT">IT</option>
+                    <option value="EEE">EEE</option>
+                    <option value="ECE">ECE</option>
+					<option value="CE">CE</option>
+					<option value="ME">ME</option>
+				</select>
+		    	</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="address" place>Addresss</label>
+				</td>
+				<td>
+					<textarea rows="4" cols="20" placeholder="Enter your Address"></textarea>
+				</td>
+			</tr>
+			<tr align="center"  >
+				<td colspan="200" height="40"><input type="submit" value="submit">
+					<input type="reset" value="reset">
+				</td>
+			</tr>
+
+			
+		</table>
+	</form>
+
+</body>
+</html>

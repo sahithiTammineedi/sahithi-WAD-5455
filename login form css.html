@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login_form_css</title>
+    <style>
+        #heading{
+    text-align: center;
+    font-size: 40px;
+}
+#tab{
+    margin-top: 125px;
+    margin-left:600px;
+    background-color: transparent;
+    box-shadow: 0px 0px 15px currentcolor
+}
+#tab:hover{
+    background-color: whitesmoke;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* background-color: black; */
+    /* background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1)); */
+    /* background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); */
+    background-image: linear-gradient(to left,rgb(249, 251, 252),whitesmoke);
+    /* background-image: repeating-linear-gradient(deepskyblue 10%,whitesmoke 20%); */
+}
+.input{
+    padding-top:5px;
+    padding-bottom:5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left:10px;
+    font-size:20px;
+}
+.input:hover{
+    border-color: transparent;
+    box-shadow: 0 0 6px white (185, 229, 247);
+}
+#login{
+    background-color: whitesmoke;
+    padding-top:10px;
+    padding-bottom:5px;
+    text-align: center;
+    color: white (0, 0, 0);
+    font-weight: bold;
+    font-size: 18px;
+}
+#b1{
+    float: left;
+}
+#b2{
+    float: right;
+    color: whitesmoke;
+}
+#cell3{
+    padding-top: 20px;
+    padding-bottom:30px;
+}
+#last{
+    text-align: center;
+    color: white;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+.input:hover::placeholder{
+    color: transparent;
+}
+/* input:focus::placeholder {
+    color: transparent;
+} */
+/* .container{
+    box-shadow: 0px 20px 0px 0px black ;
+} */
+    </style>
+</head>
+<body>
+    <table id = 'tab' cellspacing = 20px>
+        <div class = 'container'>
+        <tr><td><h1 id = 'heading'>Log in</h1></td></tr>
+        <tr><td><input type = 'text' placeholder = 'Username' size = 40 class = 'input'></td></tr>
+        <tr><td><input type = 'text' placeholder = 'Password' size = 40 class = 'input'></td></tr>
+        <tr><td id = 'login'>Log in</td></tr>
+        <tr><td id = 'cell3'><span><input type = 'checkbox' id = 'b1'>Remember me</span><span id = 'b2'><a href = 'css_forgot_password.html' target = "_blank">Forgot Password?</a></span></td></tr>
+        </div>
+        <tr><td id = 'last'><a href = 'css_registrationform.html' target = '_blank'>Create an Account</a></td></tr>
+    </table>
+</body>
+</html>

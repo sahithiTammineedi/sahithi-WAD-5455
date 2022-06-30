@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>exp-7</title>
+	<script type="text/javascript">
+		function fact(){
+			var num, fac, i;
+			num = document.getElementById('num').value;
+			fac = 1;
+			for(i = 1;i <= num; i++){
+				fac = fac * i;
+			}
+			document.getElementById("r1").innerHTML= "factorial of " + num +": " + fac;
+		}
+		function fib(){
+			var n = document.getElementById("num").value;
+			var n1,n2,n3,r;
+			n1 = 0,n2 = 1;
+			r = n1 + " " + n2;
+			for(var i = 1; i < n; i++)
+			{
+				n3 = n1 + n2;
+				n1 = n2;
+				n2 = n3;
+				r = r + " " + n3;
+			}
+			document.getElementById("r1").innerHTML =  "The fibonocci series are: " + r;
+            
+		}
+		function is_prime(val){
+			res = true
+			for(var i = 2; i < val; i++){
+				if(val % i == 0){
+					res = false;
+					break;
+				}
+			}
+			return res
+		}
+		function prime(){
+			var num = document.getElementById('num').value;
+			if(num == 1){
+				document.getElementById("r1").value =  num + "is neither prime nor composite";
+			}
+			if(num > 1){
+				ans = ""
+				for(var i = 2; i < num; i++){
+					if(is_prime(i)){
+						ans = ans + i + " "
+					}
+				}
+				document.getElementById("r1").innerHTML =  "The Prime Numbers upto " + num + " are <br>" + ans ;
+			}
+			
+		}
+		function palindrome(){
+		var rem, temp, s = 0;
+		var n = document.getElementById("num").value;
+		temp = n;
+		while(n>0)
+		{
+			rem = n%10;
+			n = parseInt(n/10);
+			s = s*10 + rem;
+		}
+		if(s==temp)
+		{
+			document.getElementById("r1").innerHTML ="The given number is Palindrome";
+		}
+		else
+		{
+			document.getElementById("r1").innerHTML ="The given number is not palindrome";
+		}
+	}
+
+	</script>
+</head>
+<body align = 'center'>
+	<form>
+		<input type="text" id="num"/><br><br><br>
+		<input type="button" value="factorial of number" onclick="fact()"/><br><br><br>
+	    <input type="button" value="fibonacci series up to that number" onclick="fib()"/><br><br><br>
+		<input type="button" value="prime numbers upto that number" onclick="prime()"/><br><br><br>
+		<input type="button" value="palindrome check" onclick="palindrome()"><br><br><br>
+		<p id="r1" name = 'r1'></p>
+	</form>
+</body>
+</html>

@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration_form</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: black;
+        }
+        #tab{
+            margin-top:65px;
+            background-color: whitesmoke;
+        }
+        #cap{
+            background-color: whitesmoke;
+        }
+        .s1{
+            font-weight: bold;
+        }
+        #reset{
+            margin-left: 70px;
+        }
+        .s1:hover::placeholder{
+            color:transparent;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <form>
+        <table cellspacing = 15 id = 'tab'>
+            <caption id = 'cap'><h1 style = "color: blue;">Student Registration Form</h1></caption>
+            <tr>
+                <td>RegNo</td>
+                <td><input type = "text" name = "regno" placeholder="Enter your RegNo" class = 's1'></td>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td><input type = "text" name = "name" placeholder="Enter your Name" class = 's1'></td>
+            </tr>
+            <tr>
+                <td>Father Name</td>
+                <td><input type = "text" name = "fname" placeholder="Enter your Father Name" class = 's1'></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type = "radio" name = "gen">Male&nbsp;&nbsp;<input type = "radio" name = "gen" class = 's1'>Female
+                </td>
+            </tr>
+            <tr>
+                <td>Date of Birth</td>
+                <td>
+                    <input type = "date" class = 's1'>
+                </td>
+            </tr>
+            <tr>
+                <td>Languages Knows</td>
+                <td>
+                <table>
+                <tr>
+                    <td><input type = "checkbox" class = 's1'>C</td>
+                    <td><input type = "checkbox" class = 's1'>C++</td>
+                    <td><input type = "checkbox" class = 's1'>Python</td>
+                </tr>
+                <tr>
+                    <td><input type = "checkbox"class = 's1' >Java</td>
+                    <td><input type = "checkbox" class = 's1'>R</td>
+                    <td><input type = "checkbox" class = 's1'>Julia</td>
+                </tr>
+                </table>
+                </td>
+            </tr>
+            <tr>
+                <td>Branch</td>
+                <td>
+                    <select value = "Select Branch">
+                        <option>Select Branch</option>
+                        <option>CSE</option>
+                        <option>IT</option>
+                        <option>AI&DS</option>
+                        <option>AI&ML</option>
+                        <option>ECE</option>
+                        <option>EEE</option>
+                        <option>ME</option>
+                        <option>CE</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td>
+                    <textarea rows = 10 cols = 10 placeholder="Enter Your Address" class = 's1'></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td align = "right"><button value = "Submit" class = 's1'>Submit</button></td>
+                <td align = "left" class = 's1'><button value = 'Reset' id = 'reset'><b>Reset</b></button></td>
+            </tr>
+            
+        </table>
+        </form>
+    </center>
+    
+    
+</body>
+</html>
